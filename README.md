@@ -11,15 +11,17 @@ Video with sound illustrating the work (high-quality video can be access at [You
 https://user-images.githubusercontent.com/20850928/163514798-2bd29c01-a1a8-40ae-8632-b052d2cdfb47.mp4
 
 
-## Installation (for Ubuntu 18.04)
+## Installation (for Ubuntu 18.04 / 22.04)
 Recommended: install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 ```shell
 git clone https://github.com/arc-l/more.git
 cd more
-conda env create --name more --file=env-more.yml
+conda env create --name more --file=env-more.yml    # 18.04
+conda env create --name more --file=env-more-2.yml  # 22.04
 conda activate more
 ```
+
 
 ## Quick Start (benchmarking as presented in the paper)
 Two deep nets should be downloaded from https://drive.google.com/drive/folders/12gmTTyQBxtknXmkyA13aH-7llN0XbYQW?usp=sharing and placed under `more/` as
