@@ -371,7 +371,7 @@ if __name__ == "__main__":
     collector = SeachCollector(cases)
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     env = Environment(gui=False)
-    env_sim = Environment(gui=False)
+    env_sim = Environment(gui=True)
     mcts_helper = MCTSHelper(env_sim, "logs_grasp/snapshot-post-020000.reinforcement.pth")
     push_model = PushNet()
     push_model.load_state_dict(torch.load(args.push_model)["model"])
